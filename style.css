@@ -1,0 +1,337 @@
+
+@font-face {
+    font-family: vazir-ennum;
+    src: url(fonts/vazir-font-v29.1.0/Vazir-Black.eot);
+    src: url(fonts/vazir-font-v29.1.0/Farsi-Digits/Vazir-Black-FD.ttf);
+}
+body{
+    background-color: rgb(3 22 51);
+}
+div.main{
+    width: 80%;
+    height: auto;
+    padding-bottom: 50px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    left: 10%;
+    top: 250px;
+    /* text-align: center; ??? */ 
+    box-shadow: 0px 0px 5px 10px #d1e2cc;
+}
+table.currency_table{
+    width: 90%;
+    margin: auto;
+    margin-top: 35px;
+    text-align: center;
+    
+}
+
+caption.caption-digital-currency{
+    background-color: #bfdaec6b;
+    color: rgb(28, 28, 80);
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 0.5rem 0;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    margin-bottom: 60px;
+    border-radius: 3px;
+}
+tr.body-row{
+    border-bottom: 2px solid rgba(100, 106, 105, 0.97);
+}
+tr.D-currency-displayed-row{
+    transition: all 0.1s ease;
+}
+tr.D-currency-displayed-row:hover{
+    transform: translateZ(10px);
+    box-shadow: 0px 0px 11px 20px rgb(82 109 130 / 45%);
+}
+tr.body-row td, tr.header-row th{
+    border-right: 2px solid rgba(100, 106, 105, 0.97);
+}
+tr.body-row td.td-digital-currency-image , tr.body-row td.td-details , tr.header-row th.th-details{
+    border-right: unset;
+}
+table.currency_table , table.currency_table td , table.currency_table th{
+    /* border: 2px solid rgba(100, 106, 105, 0.97); */
+    border-collapse: collapse;
+    color: #30302f;
+    /*border-radius: 10px;*/
+}
+th,td{
+    font-family: sans-serif;
+}
+tr.body-row:hover{
+    background-color: rgb(82 109 130 / 45%);
+    font-size: 17px;
+    font-weight: bolder;
+
+}
+table.currency_table tr.D-currency-displayed-row td:hover{
+    background-color:  rgb(39, 55, 77);
+    color: #f1f1f1;
+}
+tr.body-row:hover span.moment-change-span{
+    width: 70%;
+    left: 12%;
+}
+table.currency_table td.td-price{
+    color: rgb(18, 18, 108);
+}
+td.td-details:hover{
+    cursor: pointer;
+}
+tr.header-row th{
+    vertical-align: middle;
+    color: rgb(255, 250, 250);
+    background-color: rgb(39, 55, 77);
+    /* border-radius: 50px; */
+    width: 1%;
+    padding: 10px;
+    /* border-top: dashed 1px black; */
+    border-bottom: solid 1px black;
+    margin: auto;
+
+}
+/* header.page-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #42576d; 
+}
+ul.ul-header li{
+    list-style-type: none;
+    margin-right: 30px;
+    float: right;
+    background-color: #243e48;
+    border-radius: 10px;
+    padding: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+} */
+
+/* div.arz-coin-details__quick-info{
+    background-color: rgb(33, 38, 199);
+    width: 200px; عرض sidebar
+    background-color: #f1f1f1; رنگ پس‌زمینه sidebar
+    float: left; تراز کردن sidebar به سمت چپ
+    padding: 20px; فاصله دادن به محتوای داخل sidebar از لبه‌های آن
+    box-sizing: border-box; در نظر گرفتن border و padding در محاسبه عرض و ارتفاع
+    display: none;
+}
+table.arz-coin-general-info-table{
+    position: relative;
+    width: 200px; عرض sidebar
+    background-color: #13d3c0; رنگ پس‌زمینه sidebar
+    float: left; تراز کردن sidebar به سمت چپ
+    padding: 20px; فاصله دادن به محتوای داخل sidebar از لبه‌های آن
+    box-sizing: border-box; در نظر گرفتن border و padding در محاسبه عرض و ارتفاع
+} */
+table.details , table.details tr th{
+    width: 100%;
+}
+table.details tr td{
+    background-color: #2bef0d;
+}
+/* tr.bitcoin-row:hover + tr.bitcoin-details-row{
+    display: table-row;
+} */
+/* tr.ethereum-row:hover + tr.ethereum-details-row{
+    display: table-row;
+} */
+tr.bitcoin-details-row:hover , tr.ethereum-details-row:hover{
+    display: table-row;
+}
+tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
+   background-color: unset;
+}
+ table.details tr th{
+    text-align: right;
+    position: relative;
+    right: 11px;
+    color: purple;
+    font-size: 25px;
+    font-weight: bold;
+    direction: rtl;
+    font-family: vazir-ennum;
+ }
+ 
+ .details-paragraph{
+    text-align: justify;
+    direction: rtl;
+    margin: 5px; 
+    font-size: 17px; 
+    font-family: vazir-ennum;
+ }
+ tr.details-row td td{
+    border-right: none;
+    border: #264967 dashed 2px;
+    border-radius: 10px;
+ }
+ table.details tr td{
+    margin: 10px;
+ }
+ tr.details-row td{
+    border-right: none; 
+ }
+ tr.details-row:hover{
+    background-color: unset;
+ }
+ table.details tr td p:hover{
+    background-color: #72979334;
+    border-radius: 10px;
+    padding: 20px;
+ }
+ span.moment-change-span{
+    display: block;
+    width: 66%;
+    position: relative;
+    left: 13%;
+ }
+ @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  tr.details-row {
+    animation: fadeIn 1s ease;
+  }
+
+@media (min-width : 120px) and (max-width : 640px){
+    div.main{
+        width: 70%;
+        overflow-y: scroll;
+        height: auto;
+        padding-bottom: 50px;
+        background-color: white;
+        border-radius: 30px;
+        position: relative;
+        left: 15%;
+        top: 250px;
+        /* text-align: center; ??? */ 
+        box-shadow: 0px 0px 5px 10px #d1e2cc;
+    }
+    table.currency_table{
+        width: 100%;
+    }
+    table.currency_table td.td-digital-currency-info{
+        background-color: #ffffff;
+        position: sticky;
+        top: 0;
+        left: 32px;
+        z-index: 1;
+        box-shadow: inset -3px 0px 4px -1px rgb(84 110 145);
+    }
+    table.currency_table td.td-digital-currency-image , th.td-digital-currency-info{
+        background-color: #ffffff;
+        position: sticky;
+        top: 0;
+        left: -2px;
+        z-index: 1;
+    }
+    th.td-digital-currency-info{
+        box-shadow: inset -3px 0px 4px -1px rgb(84 110 145);
+    }
+    span.moment-change-span{
+        display: block;
+        width: 70%;
+        position: relative;
+        left: 11%;
+     }
+     tr.body-row:hover span.moment-change-span{
+        width: 86%;
+        left: 4%;
+    }
+     tr.body-row:hover{
+        background-color: rgb(82 109 130 / 45%);
+        font-size: 17px;
+        font-weight: bold;
+    }
+    tr.details-row:hover{
+        background-color: unset;
+    }
+}
+
+@media (min-width: 641px) and (max-width : 1007px) {
+
+    body{
+        background-color: #282a28;
+    }
+    div.main{
+        width: 70%;
+        overflow-y: scroll;
+        height: auto;
+        padding-bottom: 50px;
+        background-color: white;
+        border-radius: 30px;
+        position: relative;
+        left: 15%;
+        top: 250px;
+        /* text-align: center; ??? */ 
+        box-shadow: 0px 0px 5px 10px #d1e2cc;
+    }
+    table.currency_table td.td-digital-currency-info{
+        background-color: #ffffff;
+        position: sticky;
+        top: 0;
+        left: 32px;
+        z-index: 1;
+        box-shadow: inset -3px 0px 4px -1px rgb(84 110 145);
+    }
+    table.currency_table td.td-digital-currency-image , th.td-digital-currency-info{
+        background-color: #ffffff;
+        position: sticky;
+        top: 0;
+        left: -2px;
+        z-index: 1;
+    }
+    th.td-digital-currency-info{
+        box-shadow: inset -3px 0px 4px -1px rgb(84 110 145);
+    }
+    span.moment-change-span {
+        display: block;
+        width: 66%;
+        position: relative;
+        left: 15%;
+    }
+    tr.body-row:hover span.moment-change-span{
+        width: 86%;
+        left: 4%;
+    }
+}
+@media screen and (min-width : 1008px) and (max-width:2000px) {
+
+    body{
+        background-color: rgb(3 22 51);
+    }
+    div.main{
+        width: 80%;
+        height: auto;
+        overflow-y: unset;
+        padding-bottom: 50px;
+        background-color: white;
+        border-radius: 30px;
+        position: relative;
+        left: 10%;
+        top: 250px;
+        /* text-align: center; ??? */ 
+        /* box-shadow: 0px 0px 5px 10px #d1e2cc; */
+    }
+    table.currency_table{
+        width: 90%;
+        margin: auto;
+        margin-top: 35px;
+        text-align: center;
+    }
+}
